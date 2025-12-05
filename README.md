@@ -54,7 +54,7 @@ Stores the available membership options.
 | price | DECIMAL(10,2) | Cost of the plan |
 | duration_days | INT | Length of membership in days |
 
-#### Spaces (17 records)
+#### Spaces (11 records)
 
 Stores all bookable workspaces.
 
@@ -67,7 +67,7 @@ Stores all bookable workspaces.
 | hourly_rate | DECIMAL(10,2) | Price per hour |
 | is_active | BOOLEAN | Whether space is available |
 
-#### SpaceAvailability (89 records)
+#### SpaceAvailability (55 records)
 
 Stores operating hours for each space by day of week.
 
@@ -78,7 +78,7 @@ Stores operating hours for each space by day of week.
 | open_time | TIME | Opening time |
 | close_time | TIME | Closing time |
 
-#### Members (1,000 records)
+#### Members (1000 records)
 
 Stores registered members.
 
@@ -94,7 +94,7 @@ Stores registered members.
 | membership_end | DATE | Membership expiry date |
 | status | ENUM | Active, Expired, Cancelled |
 
-#### Bookings (15,001 records)
+#### Bookings (5001 records)
 
 Stores space reservations.
 
@@ -110,7 +110,7 @@ Stores space reservations.
 | status | ENUM | Confirmed, Cancelled, Completed |
 | created_at | TIMESTAMP | When booking was created |
 
-#### Payments (13,487 records)
+#### Payments (4628 records)
 
 Stores all payment transactions.
 
@@ -124,7 +124,7 @@ Stores all payment transactions.
 | payment_method | ENUM | Cash, Card, Bank Transfer |
 | payment_type | ENUM | Booking, Membership |
 
-#### BookingLog (200 records)
+#### BookingLog (2 records)
 
 Audit log that tracks booking changes (populated by triggers).
 
